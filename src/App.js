@@ -8,7 +8,7 @@ function App() {
   const login = () => setIsLoggedIn((prev) => !prev)
   return (
     <div className="App">
-      {isLoggedIn ? <Layout /> : <Login login={login}/>}
+      {isLoggedIn && sessionStorage.getItem('isLoggedIn') ? <Layout /> : <Login login={login}/>}
     </div>
   );
 }

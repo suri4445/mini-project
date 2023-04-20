@@ -4,7 +4,10 @@ export const Login = ({login}) => {
   const [user, setUser] = useState({userName: "",password:""});
   const onLogin = () => {
     const {userName,password} = user;
-    if(userName === "Suresh" && password === "1234") login();
+    if(userName === "Suresh" && password === "1234"){
+      login();
+      sessionStorage.setItem('isLoggedIn', true)
+    }
   }
   return (
     <>

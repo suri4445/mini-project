@@ -2,7 +2,7 @@
     box-sizing: border-box;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: baseline;
     padding: 1em;
     background-color: rgb(192, 45, 26);
